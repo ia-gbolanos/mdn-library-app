@@ -5,6 +5,7 @@ phases:
     commands:
       - echo Loging in to Amazon ECR...
       - AWS_ACCOUNT_ID=962929143517
+      - AWS_DEFAULT_REGION=us-west-1
       - IMAGE_REPO_NAME=mdn-library-app-container
       - IMAGE_TAG=latest
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
