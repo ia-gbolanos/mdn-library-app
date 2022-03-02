@@ -4,6 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Loging in to Amazon ECR...
+      - AWS_DEFAULT_REGION=us-west-1
       - AWS_ACCOUNT_ID=962929143517
       - IMAGE_REPO_NAME=mdn-library-app-container
       - IMAGE_TAG=latest
